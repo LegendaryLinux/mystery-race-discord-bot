@@ -4,7 +4,8 @@ let fs = require("fs");
 let prefix = (config.prefix);
 
 // Login and connect to Discord
-let client = new Discord.client.login(config.token);
+let client = new Discord.client();
+client.login(config.token);
 
 // WHen the client receives a message, respond appropriately
 client.on('message', (msg) => {
