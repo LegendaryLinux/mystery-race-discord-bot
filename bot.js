@@ -11,7 +11,7 @@ client.login(config.token);
 client.on('message', (msg) => {
     if(msg.channel.id === '271770880399507456'){
         switch (msg.content){
-            case 'Ain\t that right, Mystery Bot?':
+            case 'Ain\'t that right, Mystery Bot?':
                 msg.channel.sendMessage(
                     msg.author.id === '74369891586543616' ? 'Sure is!' : 'I\'m sorry, but that is incorrect.'
                 );
