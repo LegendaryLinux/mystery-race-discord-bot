@@ -1,3 +1,4 @@
+let SQLite = require('sqlite3');
 let Discord = require("discord.js");
 let config = require('./config.json');
 let fs = require("fs");
