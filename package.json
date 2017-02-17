@@ -12,7 +12,9 @@
   },
   "keywords": [
     "Discord",
-    "Speedrun"
+    "Speedrun",
+    "Mystery",
+    "Race"
   ],
   "author": "Ryan Stearns, Wilson Waddell, Chris Wilson",
   "license": "MIT",
@@ -22,8 +24,7 @@
   "homepage": "https://github.com/LegendaryLinux/mystery-race-discord-bot#readme",
   "dependencies": {
     "discord.js": "^11.0.0",
-    "sqlite": "^2.3.0",
-    "sqlite3": "^3.1.8",
+    "mysql": "^2.13.0",
     "uws": "^0.12.0"
   }
 }
