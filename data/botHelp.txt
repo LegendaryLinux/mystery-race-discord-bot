@@ -1,0 +1,19 @@
+Available commands:
+!randommt 	       Starts a race used in prior MT's.
+!random 	       Pulls a random game.
+!disclaimer        Displays disclaimer on games using the random command
+!consoles	       Displays a list of valid consoles
+!regions	       Displays a list of valid regions
+!genres		       Displays a list of valid genres
+
+Games can be filtered using the following arguments:
+genre=(genre)      Will filter games by genre.
+region=(region)    Will filter games by region
+console=(console)  Filter games by a specific console
+hasnotes           Only pull from games with a pastebin
+hasgoal            Only pull from games with a goal
+hasestimate        Only pull from games with a time estimate
+
+Example commands:
+!random genre=platformer region=USA
+!randommt console=nes
