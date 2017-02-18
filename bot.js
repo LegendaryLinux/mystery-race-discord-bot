@@ -24,14 +24,14 @@ client.on('message', (msg) => {
 
             // Display the bot disclaimer
             case prefix+'disclaimer':
-                fs.readFile(__dirname+'/data/botDisclaimer.txt', (err, data) => {
+                fs.readFile(__dirname+'/data/botDisclaimer.txt', 'utf8', (err, data) => {
                     if(err) throw err;
-                    msg.channel.sendMessage(data);
+                    msg.channel.sendMessage("```"+data+"```");
                 });
                 break;
 
             // Choose a game from the official list
-            case prefix+'start':
+            case prefix+'randommt':
                 let oGames = new OfficialGames(msg.channel);
                 oGames.chooseRandomGame();
                 break;
