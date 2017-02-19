@@ -1,5 +1,6 @@
-let OfficialGames = require(__dirname+'/../lib/OfficialGames.js');
+let testFunc = (bool, object) => {
+    console.log(typeof(bool));
+    console.log(typeof(object));
+};
 
-let u = new OfficialGames();
-
-//u.chooseRandomGame();
+testFunc(true);

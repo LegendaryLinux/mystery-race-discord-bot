@@ -1,8 +1,5 @@
-let fs = require("fs");
 let Discord = require("discord.js");
 let config = require(__dirname+'/data/config.json');
-let OfficialGames = require(__dirname+'/lib/OfficialGames.js');
-let UnofficialGames = require(__dirname+'/lib/UnofficialGames.js');
 let MessageHandler = require(__dirname+'/lib/MessageHandler.js');
 
 // Login and connect to Discord
