@@ -8,3 +8,7 @@ let consoleSearch = testCommand.match(/console=.*\s/);
 let mandateNotes = testCommand.match(/hasnotes/);
 let mandateGoal = testCommand.match(/hasgoal/);
 let mandateEstimate = testCommand.match(/hasestimate/);
+
+let sub = testCommand.substring(0,testCommand.indexOf(" "));
+if(sub.charAt(0) !== "!") console.log("Not a command.");
+else console.log("Found command: "+sub.substring(1));
